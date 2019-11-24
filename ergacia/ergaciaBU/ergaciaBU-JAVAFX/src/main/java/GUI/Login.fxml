@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoginFXMLController">
+   <top>
+      <AnchorPane prefHeight="73.0" prefWidth="855.0" styleClass="head" stylesheets="@../Stylesheets/base.css" BorderPane.alignment="CENTER">
+         <effect>
+            <Reflection fraction="0.59" topOpacity="0.28" />
+         </effect>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="73.0" prefWidth="864.0" styleClass="bottom" stylesheets="@../Stylesheets/base.css" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="861.0" styleClass="backgroundlogin" stylesheets="@../../resources/Stylesheets/base.css">
+               <children>
+                  <ImageView fitHeight="204.0" fitWidth="800.0" layoutX="256.0" layoutY="54.0" opacity="0.45" pickOnBounds="true" preserveRatio="true" scaleX="3.0" scaleY="3.0" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="299.0" AnchorPane.topAnchor="54.0">
+                     <image>
+                        <Image url="@../icons/interview-success.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="EmailTf" layoutX="243.0" layoutY="115.0" prefHeight="33.0" prefWidth="295.0" />
+                  <Button fx:id="LoginBtn" layoutX="317.0" layoutY="225.0" mnemonicParsing="false" onAction="#Login" prefHeight="29.0" prefWidth="140.0" text="Login" />
+                  <PasswordField fx:id="PwdTf" layoutX="245.0" layoutY="170.0" prefHeight="33.0" prefWidth="293.0" />
+                  <Button fx:id="signUp" layoutX="317.0" layoutY="264.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="29.0" prefWidth="140.0" text="Sign Up" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,70 @@
+
+.head{
+	-fx-background-color: #2f3542;
+}
+
+.baseButton{
+	-fx-background-color:white;
+	-fx-background-radius: 50px;
+}
+
+.bottom{
+	-fx-background-color: #2f3542;
+}
+.backgroundlogin{
+	-fx-background-color: #F1F2F6;
+}
+<<<<<<< HEAD
+.lien:hover{
+	-fx-text-fill: #0600c5;
+	
+}
+
+.menubtn:pressed{
+    -fx-background-color: rgba(180,180,180,0.7);
+}
+
+.menubtn:hover{
+    -fx-background-color: rgba(235,235,235,0.7);
+}
+
+.menubtn:focused{
+    -fx-background-color: #778beb;
+
+}
+.dark-blue-btn {
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+.dark-blue-btn Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+.dark-blue-btn:focused {
+	
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+=======
+.radiusbutton {
+	-fx-background-radius: 50px!important;
+	-fx-border-radius:50px!important;
+	-fx-border: bold;
+	-fx-border-color: black;
+}
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+>>>>>>> Shayma

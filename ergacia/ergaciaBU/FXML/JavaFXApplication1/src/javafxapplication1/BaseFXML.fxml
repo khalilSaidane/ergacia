@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="73.0" prefWidth="855.0" styleClass="head" stylesheets="@../Stylesheets/base.css" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="SearchTf" layoutX="658.0" layoutY="20.0" onKeyTyped="#OnSearch" prefHeight="25.0" prefWidth="174.0" promptText="Search" AnchorPane.rightAnchor="15.0" />
+            <JFXButton fx:id="AcceuilBtn" alignment="CENTER" layoutX="153.0" layoutY="7.0" onAction="#OnAcceuilBtnClick" opacity="0.83" prefHeight="57.0" prefWidth="67.0" ripplerFill="WHITE" style="-fx-background-radius: 30px;" styleClass="baseButton" stylesheets="@../Stylesheets/base.css" text=" " textAlignment="CENTER" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                     <image>
+                        <Image url="@../icons/106959.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="ProfilBtn" layoutX="257.0" layoutY="9.0" onAction="#OnProfilBtnClick" opacity="0.83" prefHeight="57.0" prefWidth="59.0" ripplerFill="WHITE" style="-fx-background-radius: 30px;" styleClass="baseButton" stylesheets="@../Stylesheets/base.css" text=" " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                     <image>
+                        <Image url="@../icons/user-icon-png-person-user-profile-icon-20.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="JobsBtn" layoutX="347.0" layoutY="7.0" onAction="#OnJobsBtnClick" opacity="0.83" prefHeight="58.0" prefWidth="45.0" ripplerFill="WHITE" style="-fx-background-radius: 30px;" styleClass="baseButton" stylesheets="@../Stylesheets/base.css" text=" " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                     <image>
+                        <Image url="@../icons/jobs_craiglist_icon-icons.com_51083.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="MessageBtn" layoutX="438.0" layoutY="9.0" onAction="#OnMessageBtnClick" opacity="0.83" prefHeight="58.0" prefWidth="45.0" ripplerFill="WHITE" style="-fx-background-radius: 30px;" styleClass="baseButton" stylesheets="@../Stylesheets/base.css" text=" " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                     <image>
+                        <Image url="@../icons/79819647-stock-vector-message-clouds-vector-icon-flat-gray-symbol-pictogram-is-isolated-on-a-white-background-designed-for.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="NotificationBtn" layoutX="532.0" layoutY="9.0" onAction="#NotificationBtn" opacity="0.83" prefHeight="58.0" prefWidth="45.0" ripplerFill="WHITE" style="-fx-background-radius: 30px;" styleClass="baseButton" stylesheets="@../Stylesheets/base.css" text=" " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
+                     <image>
+                        <Image url="@../icons/b14a8faa9c.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <Reflection fraction="0.59" topOpacity="0.28" />
+         </effect>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="73.0" prefWidth="864.0" styleClass="bottom" stylesheets="@../Stylesheets/base.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="SignOutBtn" layoutX="712.0" layoutY="14.0" onAction="#OnSignOutBtnClick" opacity="0.83" prefHeight="44.0" prefWidth="117.0" ripplerFill="WHITE" style="-fx-background-radius: 30px;" styleClass="baseButton" stylesheets="@../Stylesheets/base.css" text="Sign out" textFill="#434343" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

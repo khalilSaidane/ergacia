@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ComptePremiumController">
+   <children>
+      <ImageView fitHeight="543.0" fitWidth="862.0" layoutX="-10.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/emrQX4.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#b2a342" layoutX="217.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compte Premium" wrappingWidth="378.7829372584819">
+         <font>
+            <Font name="Baskerville Old Face" size="51.0" />
+         </font>
+      </Text>
+      <Button fx:id="BackBT" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#Back" prefHeight="38.0" prefWidth="103.0" text="Back" />
+      <Text fill="#276daa" layoutX="21.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Post &amp; Recruitment :" wrappingWidth="332.38300132751465">
+         <font>
+            <Font name="Bookman Old Style" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Post more job offer :" wrappingWidth="238.7830753326416">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Notify the candidates for your job offer :" wrappingWidth="345.9830265045166">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="18.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Build relation ships with potential candidates (Email) : " wrappingWidth="441.1829776763916">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="PostCheck" layoutX="474.0" layoutY="183.0" mnemonicParsing="false" onAction="#Post" prefHeight="24.0" prefWidth="74.0" text="\$ 5" />
+      <CheckBox fx:id="notifCheck" layoutX="474.0" layoutY="214.0" mnemonicParsing="false" onAction="#Notif" prefHeight="24.0" prefWidth="74.0" text="\$ 6" />
+      <CheckBox fx:id="EmailCheck" layoutX="474.0" layoutY="246.0" mnemonicParsing="false" onAction="#Email" prefHeight="24.0" prefWidth="74.0" text="\$ 7" />
+      <Text fill="#276daa" layoutX="18.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Period :" wrappingWidth="269.98297691345215">
+         <font>
+            <Font name="Bookman Old Style" size="32.0" />
+         </font>
+      </Text>
+      <Group layoutX="117.0" layoutY="367.0">
+         <children>
+            <RadioButton fx:id="Month" layoutX="-97.0" layoutY="-13.0" mnemonicParsing="false" onAction="#MonthFC" prefHeight="54.0" prefWidth="828.0" text="Per Month">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Year" layoutX="422.0" layoutY="-3.0" mnemonicParsing="false" onAction="#YearFC" prefHeight="38.0" prefWidth="270.0" text="Per Year ( Reduction 30 % )">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Semestre" layoutX="88.0" layoutY="-11.0" mnemonicParsing="false" onAction="#SmestreFC" prefHeight="54.0" prefWidth="304.0" text="Per Semestre ( Reduction 10 % )">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Group>
+      <TextField fx:id="Total" editable="false" layoutX="262.0" layoutY="426.0" prefHeight="51.0" prefWidth="120.0" style="-fx-border-color: Red;">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Button fx:id="NextPageBT" layoutX="697.0" layoutY="443.0" mnemonicParsing="false" onAction="#NextPage" prefHeight="38.0" prefWidth="103.0" text="Next" />
+      <ImageView fitHeight="226.0" fitWidth="239.0" layoutX="596.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/premium1.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ff0000" layoutX="174.0" layoutY="457.0" scaleY="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total :" wrappingWidth="85.1830997467041">
+         <font>
+            <Font name="Bodoni MT" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

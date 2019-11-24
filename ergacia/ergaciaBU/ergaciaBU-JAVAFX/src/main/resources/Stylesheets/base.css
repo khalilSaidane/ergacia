@@ -1,0 +1,61 @@
+
+.head{
+	-fx-background-color: #2f3542;
+}
+
+.baseButton{
+	-fx-background-color:white;
+	-fx-background-radius: 50px;
+}
+
+.bottom{
+	-fx-background-color: #2f3542;
+}
+.backgroundlogin{
+	-fx-background-color: #F1F2F6;
+}
+.radiusbutton {
+	-fx-background-radius: 50px!important;
+	-fx-border-radius:50px!important;
+	-fx-border: bold;
+	-fx-border-color: black;
+}
+<<<<<<< HEAD
+
+
+.btnstyle{
+    -fx-effect: dropshadow(two-pass-box , darkgray, 10, 0.0 , 4, 5);
+    -fx-background-color: rgba(205,205,205,0.7);
+    -fx-background-radius: 15 15 15 15;
+    -fx-background-insets: 2 2 2 2 ;
+}
+
+.bbtnstyle:pressed{
+    -fx-background-color: rgba(180,180,180,0.7);
+}
+
+.btnstyle:hover{
+    -fx-background-color: rgba(235,235,235,0.7);
+}
+
+.btnstyle:focused{
+    -fx-background-color: rgba(205,205,205,0.7);
+
+}
+
+=======
+.button4 {
+	border-radius: 12px;
+}
+.baseButton1{
+	-fx-background-color:red;
+	-fx-background-radius: 50px;
+}
+
+.radiusbutton1 {
+	-fx-background-radius: 50px!important;
+	-fx-border-radius:30px!important;
+	-fx-border: bold;
+	-fx-border-color: black;
+}
+>>>>>>> Shayma
